@@ -1,0 +1,20 @@
+﻿<!-- _Layout.cshtml in Views/Shared -->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <title>INJÎNER</title>
+
+    <!-- CSS Bundling -->
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+
+    @RenderBody()  <!-- Child views’ content will appear here -->
+    <!-- JavaScript (Bootstrap requires jQuery first) -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Content/js") <!-- This loads Bootstrap.js -->
+
+</body>
+</html>
+
